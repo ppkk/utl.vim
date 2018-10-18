@@ -310,9 +310,9 @@ let utl__file_rc =    expand("<sfile>")	    " Do not remove this line
     "	     let g:utl_cfg_hdl_mt_audio_mpeg =	    ':silent !xmms %p &'
     "endif
 
-    "if !exists("g:utl_cfg_hdl_mt_image_jpeg")
-    "	     let g:utl_cfg_hdl_mt_image_jpeg = ':!xnview %p &'
-    "endif
+    if !exists("g:utl_cfg_hdl_mt_image_jpeg")
+    	     let g:utl_cfg_hdl_mt_image_jpeg = ':!gwenview %p &'
+    endif
 
     "}
 
