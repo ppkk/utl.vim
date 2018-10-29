@@ -289,6 +289,9 @@ let utl__file_rc =    expand("<sfile>")	    " Do not remove this line
     "endif
     "}
 
+    if !exists("g:utl_cfg_hdl_mt_application_pdf")
+    	     let g:utl_cfg_hdl_mt_application_pdf = ':!okular %p &'
+    endif
 
     "						[id=utl_cfg_hdl_mt_application_msword__word] {
     "let g:utl_cfg_hdl_mt_application_msword__word = "call Utl_if_hdl_mt_application_msword__word('%P','%f')"
