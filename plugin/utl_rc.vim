@@ -317,6 +317,10 @@ let utl__file_rc =    expand("<sfile>")	    " Do not remove this line
     	     let g:utl_cfg_hdl_mt_image_jpeg = ':!gwenview %p &'
     endif
 
+    if !exists("g:utl_cfg_hdl_mt_image_png")
+    	     let g:utl_cfg_hdl_mt_image_png = ':!gwenview %p &'
+    endif
+
     "}
 
 "]
